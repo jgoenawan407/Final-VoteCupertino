@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="description" content="Useful website">
+		<meta name="author" content="Jackson Goenawan">
+		<meta name="newport" content="width = device-width, initial-scale=1.0"> <!-- Makes sure that webpage fits on to any device -->
+		<title>VoteCupertino Input Page</title>
+	</head>
+	<body>
+		<h1>Address Input Page</h1>
+		
+		<h3>On this page, you can enter your address and once you submit, you'll be provided with the voting centers and their distances to you!</h3>
+		<hr>
+		<form name = "AddressForm", onsubmit = "initMap()">
+			<span>Your address:</span>
+			<input type = "text" id = "Address"/>
+			<button id = "submitter">Submit</button>
+		</form>
+		<br>
+
+	<style>
+		#map { 
+		height: 400px;
+		width: 100%;
+	}
+	</style>
+
+	<div id = "map"></div>
+	<br>
+	<h4>Each distance displayed corresponds with each voting center address.</h4> 
+	<div>Destinations:</div>
+	<div>10300 Torre Avenue, Cupertino, CA</div>
+    <div>21250 Stevens Creek Boulevard, Cupertino, CA</div>
+    <div>10185 North Stelling Road, Cupertino, CA</div>
+	
+	<p id = "spacer"> </p>
+	<div id = "msg"></div> <!-- Message displaying the closest center and distance -->
+
+	<script type="text/javascript" src="C:\Users\jgoen\Documents\Sublime Code Files\Final VoteCupertino Code\final_locater.js"></script>
+
+	<script async defer
+		src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAAmF_qsrIf7_Dbazw8wtmRN10Qmk6rV94&callback=initMap&libraries=&v=weekly"> // Establish map API
+    </script>
+    
+	</body>
+</html>
