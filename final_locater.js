@@ -87,7 +87,7 @@ async function initMap(){
     console.log(closest);
 
 
-    document.getElementById("msg").innerHTML = "The nearest polling center is " + closest + ", which is " + minDistString.substring(0, 4) + " miles away.";
+    document.getElementById("msg").innerHTML = "The nearest ballot drop-off center is " + closest + ", which is " + minDistString.substring(0, 4) + " miles away.";
 }
 
     function getDistances(directionsService, destination) {
