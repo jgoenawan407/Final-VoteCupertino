@@ -66,9 +66,7 @@ async function initMap(){
     // Create the set of all voting site addresses
     const destinations = ["10300 Torre Avenue, Cupertino, CA",
     "21250 Stevens Creek Boulevard, Cupertino, CA",
-    "10185 North Stelling Road, Cupertino, CA",
-    "22445 Cupertino Road, Cupertino, CA",
-    "19624 Homestead Rd, Cupertino, CA"];
+    "10185 North Stelling Road, Cupertino, CA"];
 
     var distances = [];
 
